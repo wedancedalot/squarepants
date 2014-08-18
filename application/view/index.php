@@ -1,0 +1,1 @@
+Variable from controller - <?=$info?>
