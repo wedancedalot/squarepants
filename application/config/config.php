@@ -10,8 +10,9 @@ $config['log_file'] = 'errors.log';
 /**
  * DB Connection Settings
  */
+$config['db']['driver']		= 'mysql'; // available options: 'mysql'
 $config['db']['host'] 		= 'localhost';		
 $config['db']['username'] 	= 'root';
 $config['db']['password']	= '';
-$config['db']['dbname'] 	= 'squarepants';
+$config['db']['dbname'] 	= 'fancyproducts';
 $config['db']['prefix'] 	= 'sp_';

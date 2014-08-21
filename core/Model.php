@@ -6,8 +6,9 @@ if (!defined('SP_ROOT')) exit;
 
 // TO DO:
 // methods: join(table name, ON, type); group_by()
-// fetch, fetch_row, fetch_var
-//
+// make is_array check for where statements
+// make model class not to extend this one
+
 class SP_Model
 {	
 	# Db handler
@@ -16,12 +17,13 @@ class SP_Model
 	# Array for query building
 	private $_query = array();
 
-	# Returns mysqli connection
+	# Returns DB handler
 	public function __construct()
 	{
-		$this->_handle = SP_DB::getInstance();
+		$this->_handle = SP_Database::init();
 	}
-
+	
+	# Methods for quiery building
 	function select($fields = '*')
 	{
 		$model = new SP_Model;
@@ -48,7 +50,7 @@ class SP_Model
 		$where = '';
 		foreach ($conditions as $condition => $value) {
 			if (!is_numeric($condition)) {
-				$where .= ' ' . $condition .' = `' .$this->_handle->real_escape_string($value). '` AND';
+				$where .= ' ' . $condition .' = "' .$this->_handle->sanitize($value). '" AND';
 			} else {
 				$where .= ' ' . $value;
 			}
@@ -72,7 +74,7 @@ class SP_Model
 		$where = '';
 		foreach ($conditions as $condition => $value) {
 			if (!is_numeric($condition)) {
-				$where .= ' ' . $condition .' = `' .$this->_handle->real_escape_string($value). '` AND';
+				$where .= ' ' . $condition .' = "' .$this->_handle->sanitize($value). '" AND';
 			} else {
 				$where .= ' ' . $value;
 			}
@@ -117,23 +119,18 @@ class SP_Model
 			return false;
 		}
 
-    	$this->create();
 		foreach ($data as $key => &$value) {
 			if (empty($value)) {
 				unset($data[$key]);
 				continue;
 			}
-			$value = trim($this->_handle->real_escape_string($value));
+			$value = trim($this->_handle->sanitize($value));
 		}
 
         $q = 'INSERT INTO '.$table.' (' . implode(', ', array_keys($data)) . ')
-        	VALUES (`' . implode('`, `', $data) . '`)';
-
-        if ($this->_handle->query($q)) {
-	    	return $this->mysqli->insert_id();
-        }
-
-        return false;
+        	VALUES ("' . implode('", "', $data) . '")';
+		$this->_handle->execute($q);
+		return $this->_handle->insert_id();
     }
 
     public function update($table, array $data, array $where)
@@ -146,23 +143,23 @@ class SP_Model
 
 		foreach ($data as $key => $value) {
 			if (!empty($value)) {
-				$q .= ' ' . $key .' = `' . trim($this->_handle->real_escape_string($value)) . '`, ';
+				$q .= ' ' . $key .' = "' . trim($this->_handle->sanitize($value)) . '", ';
 			}
 		}
 
-		$q = rtrim($q, ',');
+		$q = rtrim($q, ', ');
 		$q .= ' WHERE';
 
 		foreach ($where as $key => $value) {
-			$q .= ' ' . $key .' = `' .$this->_handle->real_escape_string($value). '` AND';
+			$q .= ' ' . $key .' = "' .$this->_handle->sanitize($value). '" AND';
 		}
 
 		$q = rtrim($q, 'AND');
-		$this->_handle->query($q);
-		return $this->_handle->affected_rows;
+		$this->_handle->execute($q);
+		return $this->_handle->affected();
     }
 
-    public function delete($table, array $where)
+    public function delete($table, $where)
     {
 		if (empty($table) || empty($where)) {
 			return false;
@@ -170,24 +167,48 @@ class SP_Model
 
 		$q = 'DELETE FROM '.$table.' WHERE';
 
-		foreach ($where as $key => $value) {
-			$q .= ' ' . $key .' = `' .$this->_handle->real_escape_string($value). '` AND';
+		if (is_array($where)) {
+			foreach ($where as $key => $value) {
+				$q .= ' ' . $key .' = "' .$this->_handle->sanitize($value). '" AND';
+			}
+		} else {
+			$q .= ' '.$where;
 		}
 
 		$q = rtrim($q, 'AND');
-		$this->_handle->query($q);
-		return $this->_handle->affected_rows;
+		$this->_handle->execute($q);
+		return $this->_handle->affected();
     }
 
-    public function execute($q)
+    public function fetchRow()
     {
+		$query = $this->buildQuery();
     	if (empty($query)) {
     		return false;
     	}
 
-    	$this->create();
-    	$this->_handle->query($q);
-		return $this->_handle->affected_rows;
+    	return $this->_handle->fetchRow($query);
     }
+
+    public function fetchAll()
+    {
+    	$query = $this->buildQuery();
+    	if (empty($query)) {
+    		return false;
+    	}
+
+    	return $this->_handle->fetchAll($query);
+    }
+
+	public function fetchVar()
+    {
+    	$query = $this->buildQuery();
+    	if (empty($query)) {
+    		return false;
+    	}
+
+    	return $this->_handle->fetchVar($query);
+    }
+
 }
 
