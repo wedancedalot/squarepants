@@ -34,45 +34,57 @@ class SP_Bootstrap
 
     public function init()
     {
-    	$route  = ($_SERVER['REQUEST_URI'] == '/') ? false : trim(strtolower($_SERVER['REQUEST_URI']), DIRECTORY_SEPARATOR);
+    	$request  = ($_SERVER['REQUEST_URI'] == '/') ? false : trim(strtolower($_SERVER['REQUEST_URI']), DIRECTORY_SEPARATOR);
     	$routes = SP_Config::get('routes');
 
     	# If empty go to default controller
-    	if (empty($route)) {
+    	if (empty($request)) {
     		$this->dispatch();
     		return true;
     	}
 
 		# Is there a literal match?  If so we're done
-		if (isset($routes[$route])) {
-			//return $this->_set_request(explode('/', $this->routes[$uri]));
+		if (!strstr($request, ':') && isset($routes[$request])) {
+			$this->dispatch($routes[$request]['controller'], $routes[$request]['path'], $routes[$request]['action']);
+			return true;
 		}
 
-		# Loop through the route array looking for wild-cards
-		foreach ($routes as $key => $val) {
+		# Loop through the routes array looking for wild-cards
+		$request = explode('/', $request);
+		foreach ($routes as $route => $val) {
+
 			# Skip this if has no wildcard 
-			if (!strstr($key, ':')) {
+			if (!strstr($route, ':')) {
 				continue;
 			}
 
-			# Build a regexp;
-			$key = array_filter(explode('/', $key));
-			foreach ($key as &$element) {
-				if ($element{0} == ':') {
-					$element = $val['regexp'][substr($element, 1)];
+			$keys = array_filter(explode('/', $route));
+			$match = true;
+			$params = array(); // Array to be used for getting uri parameters
+			foreach ($keys as $key => $uri_part) {
+				if ($uri_part{0} == ':') {
+					# This is regexp: check whether it matches the request
+					$regexp = $val['regexp'][substr($uri_part, 1)];
+					if (!preg_match('#^'.$regexp.'$#', $request[$key])) {
+						$match = false;
+						break;
+					}
+					$params[substr($uri_part, 1)] = $request[$key];
+				} elseif($uri_part != $request[$key]) {
+					# This is text and text doesn't match
+					$match = false;
+					break;
 				}
-			} 
-			$key = implode('\/', $key);
-			# Does the RegEx match?
-			if (preg_match('#^'.$key.'$#', $route)) {
-				$this->dispatch($val['controller'], $val['path'], $val['action']);
+			}
+			if ($match) {
+				$this->dispatch($routes[$route]['controller'], $routes[$route]['path'], $routes[$route]['action'], $params);
 				return true;
 			}
 		}
 
     	switch (SP_ENVIRONMENT) {
 			case 'development':
-				throw new Exception("This route is not set: " . $route . '. Please add it to .'.SP_APPLICATION.'config'.'/routes.php', 1);
+				throw new Exception('This route is not set! Please add it to: ' .SP_APPLICATION. 'config'.'/routes.php', 1);
 				break;
 			default:
 			case 'production':
@@ -80,10 +92,11 @@ class SP_Bootstrap
 		        header("Location: /", TRUE, 301);
 			break;
 		}
+
 		return false;
     }
 
-    private function dispatch($controller = null, $action = null, $path = null)
+    private function dispatch($controller = null, $action = null, $path = null, $params = false)
     {    
     	if (empty($controller)) {
     		$controller = SP_DEFAULT_CONTROLLER;
@@ -95,6 +108,10 @@ class SP_Bootstrap
 
     	if (!empty($path)) {
     		$path = rtrim(strtolower($path), DIRECTORY_SEPARATOR) . DIRECTORY_SEPARATOR;
+    	}
+
+    	if (!empty($params)) {
+    		SP_Config::set($params,'params');
     	}
 
     	$controller = ucfirst(strtolower($controller)).'Controller';

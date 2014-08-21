@@ -10,7 +10,6 @@ class IndexController extends IndexPattern
 	public function indexAction()
 	{
 		$this->users_model->update_example();
-
 		$this->view->info = 'Some value';
 		$this->title = 'Squarepants WELCOME!';
 		$this->display('index');

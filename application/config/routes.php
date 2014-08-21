@@ -11,16 +11,16 @@ $config['routes'] = array(
 		'action'		=>  '',
 	),
 
-	'/home' => array(
+	'home' => array(
 		'path'			=>  '',
-		'controller'	=>  'home',
+		'controller'	=>  '',
 		'action'		=>  '',
 	),
 
 	'statistics/:num/:letters' => array(
 		'path'			=>  '',
-		'controller'	=>  'stats',
-		'action'		=>  'write',
+		'controller'	=>  '',
+		'action'		=>  '',
 		'regexp'		=> array(
 			'letters' => '[0-9]*[a-zA-Z0-9\-]*\.html',
 			'num' 	=> '[0-9]*'

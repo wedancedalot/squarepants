@@ -7,9 +7,11 @@ class SP_Controller
 {	
 	protected $view = null;
 	protected $_models = array();
+	protected $_params = array();
 
 	public function __construct(){
 		$this->view = new SP_View();
+		$this->_params = SP_Config::get('params');
 	}
 
 	public function collapse($html)
@@ -33,5 +35,17 @@ class SP_Controller
 	public function __get($key)
     {
         return @$this->_models[$key];
+    }
+
+    /*
+    * Method to extract variables from routing
+    */
+    public function param($key)
+    {
+    	if (!empty($key) && !empty($this->_params[$key])) {
+    		return $this->_params[$key];
+    	}
+
+    	return false;
     }
 }
