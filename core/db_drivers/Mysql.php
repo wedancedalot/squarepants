@@ -68,6 +68,11 @@ class SP_DB_Mysql extends SP_Database
 
     public function sanitize($string)
     {
+        $string = trim($string);
+        if (is_numeric($string)) {
+            return $string;
+        }
+        
         return $this->handle->real_escape_string($string);
     }
 

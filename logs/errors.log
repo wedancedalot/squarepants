@@ -1,0 +1,459 @@
+Notice: 	 2014-08-21 19:56:54;
+Message: 	 Array to string conversion;
+File: 		 /vhosts/squarepants.tk/public_html/core/Bootstrap.php;
+Line: 		 64;
+URL: 		 http://squarepants.tk/statistics/15/lwewe
+IP: 		 109.251.6.19	 Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/34.0.1847.116 Chrome/34.0.1847.116 Safari/537.36
+
+			 ~~~~~~~~~~~~ 					 ~~~~~~~~~~~~
+
+Exception: 	 2014-08-21 19:56:54;
+Message: 	 This route is not set: statistics/15/lwewe. Please add it to ./vhosts/squarepants.tk/public_html/application/config/routes.php;
+File: 		 /vhosts/squarepants.tk/public_html/core/Bootstrap.php;
+Line: 		 77;
+URL: 		 http://squarepants.tk/statistics/15/lwewe
+IP: 		 109.251.6.19	 Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/34.0.1847.116 Chrome/34.0.1847.116 Safari/537.36
+
+			 ~~~~~~~~~~~~ 					 ~~~~~~~~~~~~
+
+Exception: 	 2014-08-21 19:57:12;
+Message: 	 This route is not set: statistics/15/lwewe. Please add it to ./vhosts/squarepants.tk/public_html/application/config/routes.php;
+File: 		 /vhosts/squarepants.tk/public_html/core/Bootstrap.php;
+Line: 		 77;
+URL: 		 http://squarepants.tk/statistics/15/lwewe
+IP: 		 109.251.6.19	 Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/34.0.1847.116 Chrome/34.0.1847.116 Safari/537.36
+
+			 ~~~~~~~~~~~~ 					 ~~~~~~~~~~~~
+
+Exception: 	 2014-08-21 19:57:33;
+Message: 	 This route is not set: statistics/15/lwewe. Please add it to ./vhosts/squarepants.tk/public_html/application/config/routes.php;
+File: 		 /vhosts/squarepants.tk/public_html/core/Bootstrap.php;
+Line: 		 78;
+URL: 		 http://squarepants.tk/statistics/15/lwewe
+IP: 		 109.251.6.19	 Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/34.0.1847.116 Chrome/34.0.1847.116 Safari/537.36
+
+			 ~~~~~~~~~~~~ 					 ~~~~~~~~~~~~
+
+Warning: 	 2014-08-21 19:57:43;
+Message: 	 require_once(/vhosts/squarepants.tk/public_html/application/controller/write/StatsController.php): failed to open stream: No such file or directory;
+File: 		 /vhosts/squarepants.tk/public_html/core/Bootstrap.php;
+Line: 		 107;
+URL: 		 http://squarepants.tk/statistics/15/lwewe.html
+IP: 		 109.251.6.19	 Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/34.0.1847.116 Chrome/34.0.1847.116 Safari/537.36
+
+			 ~~~~~~~~~~~~ 					 ~~~~~~~~~~~~
+
+Warning: 	 2014-08-21 19:57:55;
+Message: 	 require_once(/vhosts/squarepants.tk/public_html/application/controller/write/StatsController.php): failed to open stream: No such file or directory;
+File: 		 /vhosts/squarepants.tk/public_html/core/Bootstrap.php;
+Line: 		 106;
+URL: 		 http://squarepants.tk/statistics/15/lwewe.html
+IP: 		 109.251.6.19	 Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/34.0.1847.116 Chrome/34.0.1847.116 Safari/537.36
+
+			 ~~~~~~~~~~~~ 					 ~~~~~~~~~~~~
+
+Exception: 	 2014-08-21 19:59:45;
+Message: 	 This route is not set: statistics/15/l:wewe.html. Please add it to ./vhosts/squarepants.tk/public_html/application/config/routes.php;
+File: 		 /vhosts/squarepants.tk/public_html/core/Bootstrap.php;
+Line: 		 77;
+URL: 		 http://squarepants.tk/statistics/15/l:wewe.html
+IP: 		 109.251.6.19	 Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/34.0.1847.116 Chrome/34.0.1847.116 Safari/537.36
+
+			 ~~~~~~~~~~~~ 					 ~~~~~~~~~~~~
+
+Warning: 	 2014-08-21 20:00:05;
+Message: 	 substr() expects parameter 2 to be long, string given;
+File: 		 /vhosts/squarepants.tk/public_html/core/Bootstrap.php;
+Line: 		 45;
+URL: 		 http://squarepants.tk/statistics/15/l:wewe.html
+IP: 		 109.251.6.19	 Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/34.0.1847.116 Chrome/34.0.1847.116 Safari/537.36
+
+			 ~~~~~~~~~~~~ 					 ~~~~~~~~~~~~
+
+Exception: 	 2014-08-21 20:00:05;
+Message: 	 This route is not set: statistics/15/l:wewe.html. Please add it to ./vhosts/squarepants.tk/public_html/application/config/routes.php;
+File: 		 /vhosts/squarepants.tk/public_html/core/Bootstrap.php;
+Line: 		 77;
+URL: 		 http://squarepants.tk/statistics/15/l:wewe.html
+IP: 		 109.251.6.19	 Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/34.0.1847.116 Chrome/34.0.1847.116 Safari/537.36
+
+			 ~~~~~~~~~~~~ 					 ~~~~~~~~~~~~
+
+Exception: 	 2014-08-21 20:00:09;
+Message: 	 This route is not set: statistics/15/l:wewe.html. Please add it to ./vhosts/squarepants.tk/public_html/application/config/routes.php;
+File: 		 /vhosts/squarepants.tk/public_html/core/Bootstrap.php;
+Line: 		 77;
+URL: 		 http://squarepants.tk/statistics/15/l:wewe.html
+IP: 		 109.251.6.19	 Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/34.0.1847.116 Chrome/34.0.1847.116 Safari/537.36
+
+			 ~~~~~~~~~~~~ 					 ~~~~~~~~~~~~
+
+Exception: 	 2014-08-21 20:00:17;
+Message: 	 This route is not set: statistics/15/l:wewe.html. Please add it to ./vhosts/squarepants.tk/public_html/application/config/routes.php;
+File: 		 /vhosts/squarepants.tk/public_html/core/Bootstrap.php;
+Line: 		 77;
+URL: 		 http://squarepants.tk/statistics/15/l:wewe.html
+IP: 		 109.251.6.19	 Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/34.0.1847.116 Chrome/34.0.1847.116 Safari/537.36
+
+			 ~~~~~~~~~~~~ 					 ~~~~~~~~~~~~
+
+Exception: 	 2014-08-21 20:01:25;
+Message: 	 This route is not set: statistics/15/l:wewe.html. Please add it to ./vhosts/squarepants.tk/public_html/application/config/routes.php;
+File: 		 /vhosts/squarepants.tk/public_html/core/Bootstrap.php;
+Line: 		 78;
+URL: 		 http://squarepants.tk/statistics/15/l:wewe.html
+IP: 		 109.251.6.19	 Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/34.0.1847.116 Chrome/34.0.1847.116 Safari/537.36
+
+			 ~~~~~~~~~~~~ 					 ~~~~~~~~~~~~
+
+Exception: 	 2014-08-21 20:01:32;
+Message: 	 This route is not set: hom. Please add it to ./vhosts/squarepants.tk/public_html/application/config/routes.php;
+File: 		 /vhosts/squarepants.tk/public_html/core/Bootstrap.php;
+Line: 		 78;
+URL: 		 http://squarepants.tk/hom
+IP: 		 109.251.6.19	 Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/34.0.1847.116 Chrome/34.0.1847.116 Safari/537.36
+
+			 ~~~~~~~~~~~~ 					 ~~~~~~~~~~~~
+
+Exception: 	 2014-08-21 20:01:33;
+Message: 	 This route is not set: home. Please add it to ./vhosts/squarepants.tk/public_html/application/config/routes.php;
+File: 		 /vhosts/squarepants.tk/public_html/core/Bootstrap.php;
+Line: 		 78;
+URL: 		 http://squarepants.tk/home
+IP: 		 109.251.6.19	 Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/34.0.1847.116 Chrome/34.0.1847.116 Safari/537.36
+
+			 ~~~~~~~~~~~~ 					 ~~~~~~~~~~~~
+
+Exception: 	 2014-08-21 20:01:54;
+Message: 	 This route is not set: home. Please add it to ./vhosts/squarepants.tk/public_html/application/config/routes.php;
+File: 		 /vhosts/squarepants.tk/public_html/core/Bootstrap.php;
+Line: 		 78;
+URL: 		 http://squarepants.tk/home
+IP: 		 109.251.6.19	 Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/34.0.1847.116 Chrome/34.0.1847.116 Safari/537.36
+
+			 ~~~~~~~~~~~~ 					 ~~~~~~~~~~~~
+
+Notice: 	 2014-08-21 20:02:00;
+Message: 	 Undefined index: home;
+File: 		 /vhosts/squarepants.tk/public_html/core/Bootstrap.php;
+Line: 		 45;
+URL: 		 http://squarepants.tk/home
+IP: 		 109.251.6.19	 Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/34.0.1847.116 Chrome/34.0.1847.116 Safari/537.36
+
+			 ~~~~~~~~~~~~ 					 ~~~~~~~~~~~~
+
+Exception: 	 2014-08-21 20:02:00;
+Message: 	 This route is not set: home. Please add it to ./vhosts/squarepants.tk/public_html/application/config/routes.php;
+File: 		 /vhosts/squarepants.tk/public_html/core/Bootstrap.php;
+Line: 		 78;
+URL: 		 http://squarepants.tk/home
+IP: 		 109.251.6.19	 Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/34.0.1847.116 Chrome/34.0.1847.116 Safari/537.36
+
+			 ~~~~~~~~~~~~ 					 ~~~~~~~~~~~~
+
+Notice: 	 2014-08-21 20:02:18;
+Message: 	 Undefined index: home;
+File: 		 /vhosts/squarepants.tk/public_html/core/Bootstrap.php;
+Line: 		 45;
+URL: 		 http://squarepants.tk/home
+IP: 		 109.251.6.19	 Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/34.0.1847.116 Chrome/34.0.1847.116 Safari/537.36
+
+			 ~~~~~~~~~~~~ 					 ~~~~~~~~~~~~
+
+Exception: 	 2014-08-21 20:02:18;
+Message: 	 This route is not set: home. Please add it to ./vhosts/squarepants.tk/public_html/application/config/routes.php;
+File: 		 /vhosts/squarepants.tk/public_html/core/Bootstrap.php;
+Line: 		 78;
+URL: 		 http://squarepants.tk/home
+IP: 		 109.251.6.19	 Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/34.0.1847.116 Chrome/34.0.1847.116 Safari/537.36
+
+			 ~~~~~~~~~~~~ 					 ~~~~~~~~~~~~
+
+Warning: 	 2014-08-21 20:02:50;
+Message: 	 require_once(/vhosts/squarepants.tk/public_html/application/controller/HomeController.php): failed to open stream: No such file or directory;
+File: 		 /vhosts/squarepants.tk/public_html/core/Bootstrap.php;
+Line: 		 107;
+URL: 		 http://squarepants.tk/home
+IP: 		 109.251.6.19	 Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/34.0.1847.116 Chrome/34.0.1847.116 Safari/537.36
+
+			 ~~~~~~~~~~~~ 					 ~~~~~~~~~~~~
+
+Warning: 	 2014-08-21 20:02:54;
+Message: 	 require_once(/vhosts/squarepants.tk/public_html/application/controller/HomeController.php): failed to open stream: No such file or directory;
+File: 		 /vhosts/squarepants.tk/public_html/core/Bootstrap.php;
+Line: 		 107;
+URL: 		 http://squarepants.tk/home
+IP: 		 109.251.6.19	 Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/34.0.1847.116 Chrome/34.0.1847.116 Safari/537.36
+
+			 ~~~~~~~~~~~~ 					 ~~~~~~~~~~~~
+
+Warning: 	 2014-08-21 20:03:07;
+Message: 	 require_once(/vhosts/squarepants.tk/public_html/application/controller/write/StatsController.php): failed to open stream: No such file or directory;
+File: 		 /vhosts/squarepants.tk/public_html/core/Bootstrap.php;
+Line: 		 107;
+URL: 		 http://squarepants.tk/statistics/15/lwewe.html
+IP: 		 109.251.6.19	 Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/34.0.1847.116 Chrome/34.0.1847.116 Safari/537.36
+
+			 ~~~~~~~~~~~~ 					 ~~~~~~~~~~~~
+
+Warning: 	 2014-08-21 20:03:14;
+Message: 	 require_once(/vhosts/squarepants.tk/public_html/application/controller/write/StatsController.php): failed to open stream: No such file or directory;
+File: 		 /vhosts/squarepants.tk/public_html/core/Bootstrap.php;
+Line: 		 107;
+URL: 		 http://squarepants.tk/statistics/15/lwewe.html
+IP: 		 109.251.6.19	 Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/34.0.1847.116 Chrome/34.0.1847.116 Safari/537.36
+
+			 ~~~~~~~~~~~~ 					 ~~~~~~~~~~~~
+
+Notice: 	 2014-08-21 20:16:09;
+Message: 	 Undefined variable: element;
+File: 		 /vhosts/squarepants.tk/public_html/core/Bootstrap.php;
+Line: 		 81;
+URL: 		 http://squarepants.tk/statistics/15/lwewe.html
+IP: 		 109.251.6.19	 Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/34.0.1847.116 Chrome/34.0.1847.116 Safari/537.36
+
+			 ~~~~~~~~~~~~ 					 ~~~~~~~~~~~~
+
+Notice: 	 2014-08-21 20:16:09;
+Message: 	 Undefined offset: 0;
+File: 		 /vhosts/squarepants.tk/public_html/core/Bootstrap.php;
+Line: 		 81;
+URL: 		 http://squarepants.tk/statistics/15/lwewe.html
+IP: 		 109.251.6.19	 Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/34.0.1847.116 Chrome/34.0.1847.116 Safari/537.36
+
+			 ~~~~~~~~~~~~ 					 ~~~~~~~~~~~~
+
+Notice: 	 2014-08-21 20:16:09;
+Message: 	 Undefined variable: element;
+File: 		 /vhosts/squarepants.tk/public_html/core/Bootstrap.php;
+Line: 		 81;
+URL: 		 http://squarepants.tk/statistics/15/lwewe.html
+IP: 		 109.251.6.19	 Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/34.0.1847.116 Chrome/34.0.1847.116 Safari/537.36
+
+			 ~~~~~~~~~~~~ 					 ~~~~~~~~~~~~
+
+Notice: 	 2014-08-21 20:16:09;
+Message: 	 Undefined offset: 0;
+File: 		 /vhosts/squarepants.tk/public_html/core/Bootstrap.php;
+Line: 		 81;
+URL: 		 http://squarepants.tk/statistics/15/lwewe.html
+IP: 		 109.251.6.19	 Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/34.0.1847.116 Chrome/34.0.1847.116 Safari/537.36
+
+			 ~~~~~~~~~~~~ 					 ~~~~~~~~~~~~
+
+Exception: 	 2014-08-21 20:19:00;
+Message: 	 This route is not set: statistics/:num/:letters. Please add it to ./vhosts/squarepants.tk/public_html/application/config/routes.php;
+File: 		 /vhosts/squarepants.tk/public_html/core/Bootstrap.php;
+Line: 		 82;
+URL: 		 http://squarepants.tk/statistics/15/lwewe.html
+IP: 		 109.251.6.19	 Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/34.0.1847.116 Chrome/34.0.1847.116 Safari/537.36
+
+			 ~~~~~~~~~~~~ 					 ~~~~~~~~~~~~
+
+Notice: 	 2014-08-21 20:19:16;
+Message: 	 Array to string conversion;
+File: 		 /vhosts/squarepants.tk/public_html/core/Bootstrap.php;
+Line: 		 82;
+URL: 		 http://squarepants.tk/statistics/15/lwewe.html
+IP: 		 109.251.6.19	 Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/34.0.1847.116 Chrome/34.0.1847.116 Safari/537.36
+
+			 ~~~~~~~~~~~~ 					 ~~~~~~~~~~~~
+
+Exception: 	 2014-08-21 20:19:16;
+Message: 	 This route is not set: Array. Please add it to ./vhosts/squarepants.tk/public_html/application/config/routes.php;
+File: 		 /vhosts/squarepants.tk/public_html/core/Bootstrap.php;
+Line: 		 82;
+URL: 		 http://squarepants.tk/statistics/15/lwewe.html
+IP: 		 109.251.6.19	 Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/34.0.1847.116 Chrome/34.0.1847.116 Safari/537.36
+
+			 ~~~~~~~~~~~~ 					 ~~~~~~~~~~~~
+
+Exception: 	 2014-08-21 20:19:45;
+Message: 	 This route is not set:! Please add it to ./vhosts/squarepants.tk/public_html/application/config/routes.php;
+File: 		 /vhosts/squarepants.tk/public_html/core/Bootstrap.php;
+Line: 		 82;
+URL: 		 http://squarepants.tk/statistics/15/lwewe.html
+IP: 		 109.251.6.19	 Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/34.0.1847.116 Chrome/34.0.1847.116 Safari/537.36
+
+			 ~~~~~~~~~~~~ 					 ~~~~~~~~~~~~
+
+Exception: 	 2014-08-21 20:19:50;
+Message: 	 This route is not set! Please add it to ./vhosts/squarepants.tk/public_html/application/config/routes.php;
+File: 		 /vhosts/squarepants.tk/public_html/core/Bootstrap.php;
+Line: 		 82;
+URL: 		 http://squarepants.tk/statistics/15/lwewe.html
+IP: 		 109.251.6.19	 Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/34.0.1847.116 Chrome/34.0.1847.116 Safari/537.36
+
+			 ~~~~~~~~~~~~ 					 ~~~~~~~~~~~~
+
+Exception: 	 2014-08-21 20:20:01;
+Message: 	 This route is not set! Please add it to: /vhosts/squarepants.tk/public_html/application/config/routes.php;
+File: 		 /vhosts/squarepants.tk/public_html/core/Bootstrap.php;
+Line: 		 82;
+URL: 		 http://squarepants.tk/statistics/15/lwewe.html
+IP: 		 109.251.6.19	 Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/34.0.1847.116 Chrome/34.0.1847.116 Safari/537.36
+
+			 ~~~~~~~~~~~~ 					 ~~~~~~~~~~~~
+
+Exception: 	 2014-08-21 20:24:33;
+Message: 	 This route is not set! Please add it to: /vhosts/squarepants.tk/public_html/application/config/routes.php;
+File: 		 /vhosts/squarepants.tk/public_html/core/Bootstrap.php;
+Line: 		 84;
+URL: 		 http://squarepants.tk/statistics/15/lwewe.html
+IP: 		 109.251.6.19	 Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/34.0.1847.116 Chrome/34.0.1847.116 Safari/537.36
+
+			 ~~~~~~~~~~~~ 					 ~~~~~~~~~~~~
+
+Exception: 	 2014-08-21 20:24:37;
+Message: 	 This route is not set! Please add it to: /vhosts/squarepants.tk/public_html/application/config/routes.php;
+File: 		 /vhosts/squarepants.tk/public_html/core/Bootstrap.php;
+Line: 		 84;
+URL: 		 http://squarepants.tk/statistics/15/lwewe.html
+IP: 		 109.251.6.19	 Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/34.0.1847.116 Chrome/34.0.1847.116 Safari/537.36
+
+			 ~~~~~~~~~~~~ 					 ~~~~~~~~~~~~
+
+Exception: 	 2014-08-21 20:26:04;
+Message: 	 This route is not set! Please add it to: /vhosts/squarepants.tk/public_html/application/config/routes.php;
+File: 		 /vhosts/squarepants.tk/public_html/core/Bootstrap.php;
+Line: 		 87;
+URL: 		 http://squarepants.tk/statistics/15/lwewe
+IP: 		 109.251.6.19	 Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/34.0.1847.116 Chrome/34.0.1847.116 Safari/537.36
+
+			 ~~~~~~~~~~~~ 					 ~~~~~~~~~~~~
+
+Exception: 	 2014-08-21 20:26:06;
+Message: 	 This route is not set! Please add it to: /vhosts/squarepants.tk/public_html/application/config/routes.php;
+File: 		 /vhosts/squarepants.tk/public_html/core/Bootstrap.php;
+Line: 		 87;
+URL: 		 http://squarepants.tk/statistics/15/lwewe
+IP: 		 109.251.6.19	 Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/34.0.1847.116 Chrome/34.0.1847.116 Safari/537.36
+
+			 ~~~~~~~~~~~~ 					 ~~~~~~~~~~~~
+
+Exception: 	 2014-08-21 20:26:07;
+Message: 	 This route is not set! Please add it to: /vhosts/squarepants.tk/public_html/application/config/routes.php;
+File: 		 /vhosts/squarepants.tk/public_html/core/Bootstrap.php;
+Line: 		 87;
+URL: 		 http://squarepants.tk/statistics/15/lwewe
+IP: 		 109.251.6.19	 Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/34.0.1847.116 Chrome/34.0.1847.116 Safari/537.36
+
+			 ~~~~~~~~~~~~ 					 ~~~~~~~~~~~~
+
+Warning: 	 2014-08-21 20:27:35;
+Message: 	 Missing argument 2 for SP_Config::set(), called in /vhosts/squarepants.tk/public_html/core/Bootstrap.php on line 114 and defined;
+File: 		 /vhosts/squarepants.tk/public_html/core/Config.php;
+Line: 		 15;
+URL: 		 http://squarepants.tk/statistics/15/lwewe.html
+IP: 		 109.251.6.19	 Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/34.0.1847.116 Chrome/34.0.1847.116 Safari/537.36
+
+			 ~~~~~~~~~~~~ 					 ~~~~~~~~~~~~
+
+Warning: 	 2014-08-21 20:27:41;
+Message: 	 Illegal offset type;
+File: 		 /vhosts/squarepants.tk/public_html/core/Config.php;
+Line: 		 21;
+URL: 		 http://squarepants.tk/statistics/15/lwewe.html
+IP: 		 109.251.6.19	 Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/34.0.1847.116 Chrome/34.0.1847.116 Safari/537.36
+
+			 ~~~~~~~~~~~~ 					 ~~~~~~~~~~~~
+
+Warning: 	 2014-08-21 20:27:57;
+Message: 	 Illegal offset type;
+File: 		 /vhosts/squarepants.tk/public_html/core/Config.php;
+Line: 		 21;
+URL: 		 http://squarepants.tk/statistics/15/lwewe.html
+IP: 		 109.251.6.19	 Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/34.0.1847.116 Chrome/34.0.1847.116 Safari/537.36
+
+			 ~~~~~~~~~~~~ 					 ~~~~~~~~~~~~
+
+Warning: 	 2014-08-21 20:28:02;
+Message: 	 Illegal offset type;
+File: 		 /vhosts/squarepants.tk/public_html/core/Config.php;
+Line: 		 21;
+URL: 		 http://squarepants.tk/statistics/15/lwewe.html
+IP: 		 109.251.6.19	 Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/34.0.1847.116 Chrome/34.0.1847.116 Safari/537.36
+
+			 ~~~~~~~~~~~~ 					 ~~~~~~~~~~~~
+
+Warning: 	 2014-08-21 20:28:04;
+Message: 	 Illegal offset type;
+File: 		 /vhosts/squarepants.tk/public_html/core/Config.php;
+Line: 		 21;
+URL: 		 http://squarepants.tk/statistics/15/lwewe.html
+IP: 		 109.251.6.19	 Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/34.0.1847.116 Chrome/34.0.1847.116 Safari/537.36
+
+			 ~~~~~~~~~~~~ 					 ~~~~~~~~~~~~
+
+Warning: 	 2014-08-21 20:28:38;
+Message: 	 Illegal offset type;
+File: 		 /vhosts/squarepants.tk/public_html/core/Config.php;
+Line: 		 21;
+URL: 		 http://squarepants.tk/statistics/15/lwewe.html
+IP: 		 109.251.6.19	 Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/34.0.1847.116 Chrome/34.0.1847.116 Safari/537.36
+
+			 ~~~~~~~~~~~~ 					 ~~~~~~~~~~~~
+
+Warning: 	 2014-08-21 20:28:55;
+Message: 	 Illegal offset type;
+File: 		 /vhosts/squarepants.tk/public_html/core/Config.php;
+Line: 		 21;
+URL: 		 http://squarepants.tk/statistics/15/lwewe.html
+IP: 		 109.251.6.19	 Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/34.0.1847.116 Chrome/34.0.1847.116 Safari/537.36
+
+			 ~~~~~~~~~~~~ 					 ~~~~~~~~~~~~
+
+Warning: 	 2014-08-21 20:28:57;
+Message: 	 Illegal offset type;
+File: 		 /vhosts/squarepants.tk/public_html/core/Config.php;
+Line: 		 21;
+URL: 		 http://squarepants.tk/statistics/15/lwewe.html
+IP: 		 109.251.6.19	 Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/34.0.1847.116 Chrome/34.0.1847.116 Safari/537.36
+
+			 ~~~~~~~~~~~~ 					 ~~~~~~~~~~~~
+
+Exception: 	 2014-08-23 00:06:16;
+Message: 	 This route is not set! Please add it to: /vhosts/squarepants.tk/public_html/application/config/routes.php;
+File: 		 /vhosts/squarepants.tk/public_html/core/Bootstrap.php;
+Line: 		 87;
+URL: 		 http://squarepants.tk/favicon.ico
+IP: 		 109.251.6.19	 Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/34.0.1847.116 Chrome/34.0.1847.116 Safari/537.36
+
+			 ~~~~~~~~~~~~ 					 ~~~~~~~~~~~~
+
+Exception: 	 2014-08-25 21:38:03;
+Message: 	 This route is not set! Please add it to: /vhosts/squarepants.tk/public_html/application/config/routes.php;
+File: 		 /vhosts/squarepants.tk/public_html/core/Bootstrap.php;
+Line: 		 87;
+URL: 		 http://squarepants.tk/favicon.ico
+IP: 		 109.251.6.19	 Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/34.0.1847.116 Chrome/34.0.1847.116 Safari/537.36
+
+			 ~~~~~~~~~~~~ 					 ~~~~~~~~~~~~
+
+Notice: 	 2014-08-25 21:41:05;
+Message: 	 Undefined variable: order;
+File: 		 /vhosts/squarepants.tk/public_html/core/Model.php;
+Line: 		 91;
+URL: 		 http://squarepants.tk/
+IP: 		 109.251.6.19	 Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/34.0.1847.116 Chrome/34.0.1847.116 Safari/537.36
+
+			 ~~~~~~~~~~~~ 					 ~~~~~~~~~~~~
+
+Notice: 	 2014-08-25 21:43:59;
+Message: 	 Undefined index: or_where;
+File: 		 /vhosts/squarepants.tk/public_html/core/Model.php;
+Line: 		 108;
+URL: 		 http://squarepants.tk/
+IP: 		 109.251.6.19	 Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/34.0.1847.116 Chrome/34.0.1847.116 Safari/537.36
+
+			 ~~~~~~~~~~~~ 					 ~~~~~~~~~~~~
+
+Notice: 	 2014-08-25 21:44:02;
+Message: 	 Undefined index: or_where;
+File: 		 /vhosts/squarepants.tk/public_html/core/Model.php;
+Line: 		 108;
+URL: 		 http://squarepants.tk/
+IP: 		 109.251.6.19	 Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/34.0.1847.116 Chrome/34.0.1847.116 Safari/537.36
+
+			 ~~~~~~~~~~~~ 					 ~~~~~~~~~~~~
+

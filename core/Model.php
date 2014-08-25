@@ -1,14 +1,9 @@
 <?php
 if (!defined('SP_ROOT')) exit;
+
 /**
-* Controller class
+* Model class. Used for query bulding and processing
 */
-
-// TO DO:
-// methods: join(table name, ON, type); group_by()
-// make is_array check for where statements
-// make model class not to extend this one
-
 class SP_Model
 {	
 	# Db handler
@@ -44,16 +39,14 @@ class SP_Model
 			return false;
 		}
 
-		if (!is_array($conditions)) {
-			$conditions = array($conditions);
-		}
 		$where = '';
-		foreach ($conditions as $condition => $value) {
-			if (!is_numeric($condition)) {
+
+		if (is_array($conditions)) {
+			foreach ($conditions as $condition => $value) {
 				$where .= ' ' . $condition .' = "' .$this->_handle->sanitize($value). '" AND';
-			} else {
-				$where .= ' ' . $value;
 			}
+		} else {
+			$where .= ' ' . $value;
 		}
 		
 		$where = rtrim($where, 'AND');
@@ -67,17 +60,15 @@ class SP_Model
 			return false;
 		}
 
-		if (!is_array($conditions)) {
-			$conditions = array($conditions);
-		}
 
 		$where = '';
-		foreach ($conditions as $condition => $value) {
-			if (!is_numeric($condition)) {
+
+		if (is_array($conditions)) {
+			foreach ($conditions as $condition => $value) {
 				$where .= ' ' . $condition .' = "' .$this->_handle->sanitize($value). '" AND';
-			} else {
-				$where .= ' ' . $value;
 			}
+		} else {
+			$where .= ' ' . $value;
 		}
 		
 		$where = rtrim($where, 'AND');
@@ -87,22 +78,60 @@ class SP_Model
 
 	public function order($field, $order = 'ASC')
 	{
-		$this->_query['order'] = ' ORDER BY ' . $field . ' ' . $order;
+		$this->_query['order'] = 'ORDER BY ' . $field . ' ' . $order;
+		return $this;
+	}
+
+	public function join($table, $on, $type  = 'LEFT')
+	{
+		# Pseudonim can be assigned as an array
+		if (is_array($table)) {
+			$table = $table[0] . ' AS ' . $table[1];
+		}
+
+		$this->_query['join'][] = $type . ' JOIN ' . $table . ' ON ' . $on;
+		return $this;
+	}
+
+	public function groupBy($fields)
+	{
+		$this->_query['group_by'] = 'GROUP BY ' . $fields;
 		return $this;
 	}
 
 	private function buildQuery()
 	{
-		if (empty($this->_query)) {
+		if (empty($this->_query) || empty($this->_query['select']) || empty($this->_query['from'])) {
 			return false;
 		}
 
-		$query = 'SELECT '.$this->_query['select'].' FROM '.$this->_query['from'].' WHERE ('.$this->_query['where'].')';
-		if (array_key_exists('or_where', $this->_query)) {
-			$query .= ' OR ('.$this->_query['or_where'].')';
+		$query = 'SELECT '.$this->_query['select'] . PHP_EOL .'FROM '.$this->_query['from'];
+
+		# Join
+		if (array_key_exists('join', $this->_query)) {
+			foreach ($this->_query['join'] as $join) {
+				$query .= PHP_EOL . $join;
+			}
 		}
+
+		# Where
+		if (array_key_exists('where', $this->_query)) {
+			$query .= PHP_EOL . 'WHERE ('.$this->_query['where'].')';
+		}
+
+		# Or where
+		if (array_key_exists('or_where', $this->_query)) {
+			$query .= PHP_EOL . 'OR ('.$this->_query['or_where'].')';
+		}
+
+		# Group by
+		if (!empty($this->_query['group_by'])) {
+			$query .= PHP_EOL . $this->_query['group_by'];
+		}
+
+		# Order
 		if (!empty($this->_query['order'])) {
-			$query .= $this->_query['order'];
+			$query .= PHP_EOL . $this->_query['order'];
 		}
 
 		return $query;
@@ -150,8 +179,12 @@ class SP_Model
 		$q = rtrim($q, ', ');
 		$q .= ' WHERE';
 
-		foreach ($where as $key => $value) {
-			$q .= ' ' . $key .' = "' .$this->_handle->sanitize($value). '" AND';
+		if (is_array($where)) {
+			foreach ($where as $key => $value) {
+				$q .= ' ' . $key .' = "' .$this->_handle->sanitize($value). '" AND';
+			}
+		} else {
+			$q .= ' '.$where;
 		}
 
 		$q = rtrim($q, 'AND');
@@ -209,6 +242,4 @@ class SP_Model
 
     	return $this->_handle->fetchVar($query);
     }
-
 }
-
